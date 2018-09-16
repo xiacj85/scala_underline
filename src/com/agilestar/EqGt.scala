@@ -4,6 +4,7 @@ package com.agilestar
  * scala => 符号使用总结<br>
  * 
  * 1.函数的传名调用<br>
+ * 2.定义函数<br>
  * 
  * @author Administrator
  * 
@@ -38,13 +39,13 @@ object EqGt {
                        传名调用为进入函数内部后才调用表达式的值               
      */
     
-    def f (x : Int,y : Int) ={
-      x + y
-    }
+    /**
+     * 定义函数f,入参为x,y,求x,y的和
+     *      
+     */
+    val f = (x :Int,y:Int) =>  x + y
     
-    val x = (x :Int,y:Int) =>  x + y
-    
-    println(x(1,2)); 
+    println(f(1,2)); 
          
   }
   
