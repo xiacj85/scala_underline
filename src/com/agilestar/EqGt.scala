@@ -44,7 +44,7 @@ object EqGt {
     
     val x = (x :Int,y:Int) =>  x + y
     
-    println(x(1,2));
+    println(x(1,2)); 
          
   }
   
